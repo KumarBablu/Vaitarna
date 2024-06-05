@@ -122,7 +122,12 @@ nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: filter 0.5s ease;
+    filter: grayscale(100%);
 }
+
+.home-image:hover {
+    filter: grayscale(0%);
 
 
 @keyframes slideInFromLeft {
