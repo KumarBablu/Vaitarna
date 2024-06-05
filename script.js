@@ -58,3 +58,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 //     setInterval(slide, 3000); // Slide every 3 seconds
 // });
+
+
+
+
+
+
+    function changeColor(event) {
+        var menuItems = document.querySelectorAll('.sidebar a');
+        menuItems.forEach(function(item) {
+            item.classList.remove('active');
+        });
+        event.target.classList.add('active');
+    }
